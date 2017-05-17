@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	min-width: 900px;
+	margin: 0;
+	padding: 0;
+	background-color: #849d8f;
+	font-family: 'Roboto',"Arial", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container {
+	position: relative;
+	width: 1146px;
+	margin: 0px auto;
+}
+.header-logo {
+	float: left;
+}
+.main-header {
+	padding-top: 10px;
+}
+.main-nav {
+	float: left;
+	width: 650px;
+	margin-left: 30px;
+	margin-top: 23px;
+}
+.main-menu {
+	padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.main-menu > li {
+	display: inline-block;
+	vertical-align: top;
+}
+.sub-menu {
+	display: none;
+}
+.user-block {
+	width: 261px;
+	padding-left: 32px;
+	float: right;
+}
+
+.user-cart .added {
+	display: none;
+}
+.user-block-item {
+	display: inline-block;
+	vertical-align: top;
+}
+.user-block-item > a {
+	display: block;
+	min-height: 32px;
+	padding: 10px 0;
+	padding-left: 45px;
+	background-color: #9db1a5;
+	border-radius: 32px;
+	font-size: 14px;
+	
+	text-decoration: none;
+}
+.user-search > a {
+	width: 32px;
+    height: 32px;
+    padding: 7px;
+    background-image: url(img/search.svg);
+    background-position: center center;
+    background-repeat: no-repeat;   
+}
+.user-search-form {
+	display: none;
+}
+.login-form {
+	display: none;
+}
+.header-info {
+	float: right;
+}
+/*Слайдер*/
+.slider {
+	margin-bottom: 40px;
+}
+.slider-product-2,
+.slider-product-3 {
+	display: none;
+}
+.slider input[type="radio"] {
+	display: none;
+}
+.slider-product-name {
+	padding: 0 240px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+}
+.slider-btn {
+	display: block;
+	text-align: center;
+}
+
+/*Баннеры*/
+.raspberries {
+	float: left;
+}
+.chocolate {
+	float: right;
+}
+.banners-item {
+	width: 560px;
+	min-height: 230px;
+	padding: 20px;
+}
+/*Бестселлер*/
+.bestsellers {
+	margin-bottom: 38px;
+}
+.bestsellers .product {
+	display: inline-block;
+	vertical-align: top;
+	width: 267px;
+	min-height: 325px;
+	padding-right: 26px;
+}
+.bestsellers .product:nth-child(4n) {
+	padding-right: 0;
+}
+/*Преимущества*/
+.advantage {
+	padding: 27px 20px;
+	color: #000000;
+	margin-bottom: 40px;
+}
+.advantage-left {
+	float: left;
+}
+.advantage-right {
+	float: right;
+}
+.advantage-title {
+	margin: 0;
+	margin-bottom: 11px;
+}
+.advantage p {
+	width: 539px;
+	padding-left: 56px;
+	padding-top: 17px;
+	margin: 0;
+	margin-bottom: 25px;
+
+}
+.advantage p:last-child {
+	margin-bottom: 0;
+}
+/*Новости*/
+.news {
+	margin-bottom: 40px;
+}
+.blog-news {
+	float: left;
+	width: 560px;
+	min-height: 220px;
+	padding: 25px 20px;
+}
+.emailing-news {	
+	float: right;
+	width: 560px;
+	min-height: 220px;
+	padding: 35px 28px;
+}
