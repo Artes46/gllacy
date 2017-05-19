@@ -25,6 +25,7 @@ body {
 	float: left;
 }
 .main-header {
+	position: relative;
 	padding-top: 10px;
 }
 .main-nav {
@@ -63,7 +64,7 @@ body {
 	min-height: 32px;
 	padding: 10px 0;
 	padding-left: 45px;
-	background-color: #9db1a5;
+	background-color: rgba(248, 247, 244, 0.2);
 	border-radius: 32px;
 	font-size: 14px;
 	
@@ -84,7 +85,10 @@ body {
 	display: none;
 }
 .header-info {
-	float: right;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	text-align: right;
 }
 /*Слайдер*/
 .slider {
@@ -121,16 +125,17 @@ body {
 	padding: 20px;
 }
 /*Бестселлер*/
-.bestsellers {
-	margin-bottom: 38px;
-}
-.bestsellers .product {
+.product { /*общий класс для index, catalog .product*/
 	display: inline-block;
 	vertical-align: top;
 	width: 267px;
 	min-height: 325px;
 	padding-right: 26px;
 }
+.bestsellers {
+	margin-bottom: 38px;
+}
+
 .bestsellers .product:nth-child(4n) {
 	padding-right: 0;
 }
@@ -176,4 +181,84 @@ body {
 	width: 560px;
 	min-height: 220px;
 	padding: 35px 28px;
+}
+/*Карта*/
+.location-map {
+	width: 100%;
+	height: 430px;
+}
+.address-block {
+	float: right;
+	width: 302px;
+	min-height: 305px;
+	margin-top: 65px;
+}
+/*Футер*/
+.main-footer {
+	min-height: 97px;
+	margin-top: 6px;
+}
+.footer-social {
+	float: left;
+	width: 186px;
+	margin-right: 213px;
+}
+.footer-social a {
+	display: inline-block;
+	vertical-align: top;
+	width: 38px;
+	height: 38px;
+	background-color: #ffffff;
+	border: 3px solid #c2cec7;
+	border-radius: 38px;
+}
+.footer-links {
+	float: left;
+	width: 330px;
+	
+}
+.footer-links-item {
+	width: 165px;
+}
+.footer-info {
+	float: left;
+	padding-left: 22px;
+}
+.footer-doc {
+	float: right;
+}
+.footer-corypting {
+	float: right;
+	width: 188px;
+}
+.popup {
+	display: none;
+}
+/*Каталог*/
+.breadcrumbs {
+	display: inline-block;
+	width: 560px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 25px;
+}
+.catalog-form fieldset {
+	display: inline-block;
+	vertical-align: top;
+}
+.catalog-form .sorting {
+	width: 193px;
+}
+.catalog-form .price {
+	width: 220px;
+}
+.catalog-form .fat {
+	width: 418px;
+}
+.catalog-item .fillers {
+	width: 702px;
+}
+.catalog-sorting-btn {
+
 }
