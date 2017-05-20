@@ -23,6 +23,7 @@ body {
 }
 .header-logo {
 	float: left;
+	margin-right: 15px;
 }
 .main-header {
 	position: relative;
@@ -31,8 +32,7 @@ body {
 .main-nav {
 	float: left;
 	width: 650px;
-	margin-left: 30px;
-	margin-top: 23px;
+	margin-top: 13px;
 }
 .main-menu {
 	padding: 0;
@@ -40,11 +40,75 @@ body {
     list-style: none;
 }
 .main-menu > li {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
+	padding: 5px 14px;
+    /* padding-bottom: 0; */
+    font-size: 16px;
+    line-height: 22px;   
+}
+.main-menu > li > a {
+
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	font-weight: 600;
+}
+.main-menu > li:hover {
+	background-color: #ffffff;
+    border-radius: 22px;
+}
+.main-menu > li:hover > a {
+	color: #000000;
+	border: none;
+}
+.main-menu > li:hover .sub-menu {
+	display: block;
+}
+.main-menu > li::after {
+	content: "";
+    position: absolute;
+    height: 10px;
+    left: 0;
+    right: 0;
 }
 .sub-menu {
 	display: none;
+	width: 145px;
+    font-size: 14px;
+    position: absolute;
+    left: -6px;
+    top: 37px;
+    z-index: 2;
+    list-style: none;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow:0px 15px 20px 5px rgba(27, 27, 27, 0.27); 
+}
+.sub-menu a {
+	display: block;
+    text-decoration: none;
+    padding: 10px 14px;
+    color: #000000;
+    margin: 0 6px;
+}
+.sub-menu li:hover {
+    background-color: #fbded8;
+}
+.sub-menu li:first-child:hover {
+    border-radius: 6px 6px 0 0;
+}
+.sub-menu li:last-child:hover {
+	border-radius: 0 0 6px 6px;
+}
+.sub-menu .bold-link {
+	font-weight: bold;
+	border-bottom: 1px solid #d1d0ce;
+}
+.main-menu .catalog:hover .sub-menu {
+	display: block;
 }
 .user-block {
 	width: 261px;
@@ -243,6 +307,9 @@ body {
 	margin: 0;
 	margin-top: 25px;
 }
+.catalog-form {
+	margin-bottom: 40px;
+}
 .catalog-form fieldset {
 	display: inline-block;
 	vertical-align: top;
@@ -261,4 +328,10 @@ body {
 }
 .catalog-sorting-btn {
 
+}
+.paginator {
+	float: right;
+}
+.inner-footer {
+	margin-top: 40px;
 }
