@@ -928,8 +928,15 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 	box-shadow: 0 0 0 3px rgba(255,255,255,.5);
     border-radius: 50%;
     margin-right: 12px;
+    border: none;
 }
-
+.social-btn:hover {
+	box-shadow: 0 0 0 4px rgba(255,255,255,.6);
+}
+.social-btn:active {
+	box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5), 0 2px 1px 0 #888888 inset;
+  color: #e9e9e9;
+}
 .social-btn-tw {
 	background-image: url("../img/twitter.svg");
 }
@@ -1109,6 +1116,7 @@ input[id="btn-3"]:checked ~ .site-wrapper {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
 .sorting-field-icon::after {
 	content: "";
     position: absolute;
@@ -1121,6 +1129,13 @@ input[id="btn-3"]:checked ~ .site-wrapper {
     border-top: 7px solid #ffffff;
     border-right: 4.5px solid transparent;
     border-left: 4.5px solid transparent;
+}
+.sorting-field select:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+.sorting-field select:hover ~ .sorting-field-icon::after {
+	border-top-color: #000000;
 }
 .sorting-field select option {
 	font-size: 14px;
@@ -1167,6 +1182,13 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 	border-radius: 50%;
 	background-color: #ffffff;
 	cursor: pointer;
+}
+.price .toggle-min:hover,
+.price .toggle-max:hover {
+	webkit-box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+
 }
 .fat .fat-field {
 	width: 418px;
@@ -1255,6 +1277,14 @@ input[id="btn-3"]:checked ~ .site-wrapper {
     height: 3px;
     background-color: #ffffff; 
 }
+.radio-label input[type="radio"] + .radio-indicator:hover,
+.fillers input[type="checkbox"] + .checkbox-indicator:hover {
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+}
+.input-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
 .catalog-sorting-btn {
 	width: 144px;
     padding: 0px 14px 0px 16px;
@@ -1270,6 +1300,15 @@ input[id="btn-3"]:checked ~ .site-wrapper {
     cursor: pointer;
     -webkit-appearance: none;
 }
+.catalog-sorting-btn:hover {
+	background-color: #ffffff;
+	color: #000000;
+	border:none;
+}
+.catalog-sorting-btn:active {
+	box-shadow: inset 0px 3px 2px 0px rgba(0,0,0,0.65);
+}
+
 .paginator {
 	float: right;
 	margin-bottom: 39px;
@@ -1280,10 +1319,19 @@ input[id="btn-3"]:checked ~ .site-wrapper {
     text-align: center;
     width: 25px;
     height: 25px;
+    border-radius: 50%;
     margin-right: 1px;
-    padding-top: 2px;
     color: #ffffff;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: background-color .15s ease-out;
+}
+.paginator a:hover {
+	background-color: rgba(248, 247, 244, 0.2);
+    
 }
 .paginator .prev,
 .paginator .next {
@@ -1320,6 +1368,7 @@ input[id="btn-3"]:checked ~ .site-wrapper {
     transform: rotate(-135deg);
 }
 .paginator .current {
+	pointer-events: none;
 	background-color: #ffffff;
     border-radius: 50%;
     color: #000000;
