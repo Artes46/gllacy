@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+
 	</head>
 	<body>
 		<input type="radio" id="btn-1" name="toggle" checked>
@@ -215,14 +216,14 @@
 				        				<div class="field">
 				        					<input class="field-input email-input" type="email" name="email" id="email" required>
 						        				
-						        			<label class="field-label" for="email">Электронная почта</label>
+						        			<label class="field-label email-label" for="email">Электронная почта</label>
 						        			<input type="submit" class="btn emailing-news-btn" value="Отправить">
 				        				</div>			  		        	
 					        			
 				        			</form>
 				        		</div>
 				        	</section>
-						
+						</div>
 						<section class="location">
 							<div class="location-map" id="ya-map">
 								
@@ -238,6 +239,7 @@
 							</div>
 								
 						</section>
+						<div class="content-wrapper">
 				<footer class="main-footer">
 					
 						<div class="footer-social">
@@ -266,22 +268,28 @@
 				<div class="popup popup-feedback">
 					<p>Мы обязательно вам ответим!</p>
 					<button class="popup-close"></button>
-					<form action="#" method="get">
-						
-							<input class="form-item" type="text" name="name" placeholder="Как вас зовут?" required="">
-						
-						
-							<input class="form-item" type="email" name="email" placeholder="Ваша почта для ответа?" required="">
+					<form class="clearfix" action="#" method="get">
+						<div class="field">
+							<input class="form-item field-input" type="text" name="name" id="name">
+							<label for="name" class="field-label">Как вас зовут?</label>
+						</div>
+						<div class="field">
+							<input class="form-item field-input" type="email" id="email" >
+							<label for="email" class="field-label">Ваша почта для ответа?</label>
+						</div>
 							
+						<div class="field">
+							<textarea class="field-input field-textarea" name="textarea" id="textarea"></textarea>
+							<label for="textarea" class="field-label">Напишите что-нибудь...</label>
+						</div>	
+							<input class="btn popup-feedback-btn" type="submit" name="submit" value="Отправить">
 						
-							<textarea name="textarea" placeholder="Напишите что-нибудь..." required=""></textarea>
-							
-							<input class="btn" type="submit" name="submit" value="Отправить">
 
 					</form>
 				</div>
 			</div>
-		</div>	
+		</div>
+			<script src="js/feedback.js"></script>	
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A11344ddbdd3959e2b2ddc8b6d555e619453e3f6325177bd4e47028c7b8572590&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true&id=ya-map"></script>
 	</body>
 	

@@ -868,21 +868,23 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 	width: 368px;
 	margin-right: 10px; 
 }
+.email-label {
+	top: 12px;
+}
 /*Карта*/
 .location-map {
+	position: relative;
 	max-width: 100%;
 	min-height: 430px;
 	background: url("../img/map.jpg") no-repeat;
 	background-size: 100%;
 
 }
-.location > .container {
-	position: relative;
-}
+
 .address-block {
 	position: absolute;
 	z-index: 10;
-	right: 0;
+	right: 3.85%;
 	
 	width: 302px;
 	min-height: 305px;
@@ -1008,8 +1010,80 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 	left: 0px;
 }
 .popup {
-	display: none;
+	
 }
+.popup-feedback {
+	display: none;
+	position: fixed;
+	top: 338px;
+	left: 50%;
+	margin-left: -239px;
+	width: 478px;
+	padding: 25px;
+	min-height: 442px;
+	background-color: #ffffff;
+	border-radius: 7px;
+	z-index: 50;
+}
+.popup-feedback p {
+	color: #000000;
+	font-size: 24px;
+	line-height: 22px;
+	margin: 0;
+	margin-bottom: 23px;
+	font-weight: 500;
+}
+.popup-feedback .field {
+	margin-bottom: 20px;
+}
+.popup-feedback .form-item {
+	width: 267px;
+}
+.field-textarea {
+	width: 100%;
+	min-height: 155px;
+
+}
+.popup-feedback-btn {
+	float: right;
+	margin-top: 5px;
+	border: none;
+	width: 138px;
+}
+.popup-close {
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+.popup-close::after,
+.popup-close::before {
+	position: absolute;
+    content: "";
+    top: 8px;
+    right: -2px;
+    width: 23px;
+    height: 2px;
+    background-color: #000000;
+}
+.popup-close::after {
+	transform: rotate(45deg);
+}
+.popup-close::before {
+	transform: rotate(-45deg);
+}
+.popup-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
 /*Каталог*/
 .breadcrumbs {
 	display: inline-block;
