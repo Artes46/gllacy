@@ -78,7 +78,7 @@ body {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	padding: 5px 14px;
+	padding: 5px 13px;
     /* padding-bottom: 0; */
     font-size: 16px;
     line-height: 22px;   
@@ -477,7 +477,7 @@ tbody td {
 .slider {
 	position: relative;
 	min-height: 525px;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 }
 .slider-product-1,
 .slider-product-2,
@@ -502,7 +502,7 @@ body > input[type="radio"] {
 
 .slider-product-name {
 	position: relative;
-	padding: 0 220px;
+	padding: 0 230px;
     padding-top: 315px;
     text-align: center;
     font-size: 60px;
@@ -521,7 +521,8 @@ body > input[type="radio"] {
 	position: absolute;
 	font-size: 0;
 	line-height: 0;
-	bottom: 0;
+	bottom: 20px;
+	left: 5px;
 }
 .slider-controls label {
 	display: inline-block;
@@ -583,6 +584,9 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 .chocolate {
 	float: right;
 	background-image: url("../img/chocolate.jpg");
+}
+.banners {
+	padding: 0px 6px 0px 6px;
 }
 .banners-item {
 	position: relative;
@@ -672,7 +676,7 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 }
 .bestsellers {
 	font-size: 0;
-	margin-bottom: 38px;
+	
 }
 
 .bestsellers .product:nth-child(4n) {
@@ -681,13 +685,13 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 .product-image {
 	position: relative;
 	max-width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	z-index: 1;
 }
 .product-price {
 	position: absolute;
 	max-width: 100%;
-	top: 216px;
+	top: 223px;
 	font-size: 45px;
 	font-weight: 700;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
