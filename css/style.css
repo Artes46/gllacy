@@ -884,6 +884,7 @@ input[id="btn-3"]:checked ~ .site-wrapper {
 /*Карта*/
 .location-map {
 	position: relative;
+	min-width: 1200px;
 	max-width: 100%;
 	min-height: 430px;
 	background: url("../img/map.jpg") no-repeat;
